@@ -17,13 +17,7 @@ const SavePlaylistForm = () => {
 const PlaylistThumbnail = () => {
   return (
     <div className="thumb">
-      <Image
-        src="/images/playlist.jpg"
-        alt="Playlist"
-        width={500}
-        height={500}
-      />
-      <span>10 videos</span>
+      <Image src="/images/post-1-1.png" alt="Playlist Thumbnail" width={500} height={500} />
     </div>
   );
 };

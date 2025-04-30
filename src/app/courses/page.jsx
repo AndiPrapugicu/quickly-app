@@ -92,8 +92,12 @@ const Courses = () => {
                 </div>
               </div>
               <div className="thumb">
-                <img src={`images/${course.thumbnail}`} alt="" />
-                <span>10 videos</span>
+                <Image
+                  src="/images/course.jpg"
+                  alt="Course Thumbnail"
+                  width={500}
+                  height={500}
+                />
               </div>
               <h3 className="title">{course.title}</h3>
               <a href={course.playlistLink} className="inline-btn">

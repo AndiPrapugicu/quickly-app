@@ -115,7 +115,7 @@ const Header = () => {
           </div>
 
           <div className="profile">
-            <img src="images/pic-1.jpg" className="image" alt="" />
+            <Image src="images/pic-1.jpg" className="image" alt="" />
             <h3 className="name">{user ? user.name : "Guest"}</h3>
             <p className="role">Student</p>
             <Link href="/profile" className="btn">

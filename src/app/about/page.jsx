@@ -31,7 +31,7 @@ const WhyChooseUsSection = () => (
   <section className="about">
     <div className="row">
       <div className="image">
-        <Image src="/images/course.jpg" alt="Course" width={500} height={500} />
+        <Image src="/images/about.jpg" alt="About Us" width={500} height={500} />
       </div>
       <div className="content">
         <h3>why choose us?</h3>
