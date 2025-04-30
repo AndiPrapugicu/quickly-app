@@ -48,7 +48,12 @@ const TeacherProfile = () => {
           <div className="box-container">
             <div className="box">
               <div className="thumb">
-                <img src="/images/thumb-1.png" alt="" />
+                <Image
+                  src="/images/thumb-1.png"
+                  alt="HTML Tutorial"
+                  width={500}
+                  height={500}
+                />
                 <span>10 videos</span>
               </div>
               <h3 className="title">complete HTML tutorial</h3>

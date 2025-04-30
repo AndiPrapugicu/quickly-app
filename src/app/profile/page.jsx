@@ -4,6 +4,7 @@ import Sidebar from "@/components/Sidebar/Sidebar";
 import Header from "@/components/Header/Header";
 import { FaBookmark, FaHeart, FaComment } from "react-icons/fa";
 import { useUser } from "@auth0/nextjs-auth0/client";
+import Image from "next/image";
 
 const UserProfile = () => {
   const { user, error, isLoading } = useUser();
@@ -32,7 +33,12 @@ const UserProfile = () => {
 
         <div className="info">
           <div className="user">
-            <img src="/images/pic-1.jpg" alt={userInfo.name} />
+            <Image
+              src="/images/profile.jpg"
+              alt="Profile"
+              width={100}
+              height={100}
+            />
             <h3>{userInfo.name}</h3>
             <p>{userInfo.role}</p>
             <a href="/update" className="inline-btn">

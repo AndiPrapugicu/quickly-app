@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import Header from "@/components/Header/Header";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Teachers() {
   const teachersData = [
@@ -135,7 +136,12 @@ export default function Teachers() {
                   </div>
                 )}
                 <div className="tutor">
-                  <img src={`images/${teacher.image}`} alt={teacher.tutor} />
+                  <Image
+                    src="/images/teacher.jpg"
+                    alt="Teacher"
+                    width={500}
+                    height={500}
+                  />
                   <div className="info">
                     <h3>{teacher.tutor}</h3>
                     <span>{teacher.date}</span>

@@ -76,7 +76,7 @@ const PlaylistDetails = () => {
           <div className="box-container">
             <Link className="box" href="/playlist/watch">
               <i className="fas fa-play"></i>
-              <img src="/images/post-1-1.png" alt="" />
+              <Image src="/images/post-1-1.png" alt="Playlist Thumbnail" width={500} height={500} />
               <h3>complete HTML tutorial (part 01)</h3>
             </Link>
 
