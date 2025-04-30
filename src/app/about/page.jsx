@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import Header from "@/components/Header/Header";
 import Link from "next/link";
+import Image from "next/image";
 
 // Constante pentru datele statice
 const whyChooseUsData = [
@@ -30,7 +31,12 @@ const WhyChooseUsSection = () => (
   <section className="about">
     <div className="row">
       <div className="image">
-        <img src="images/about-img.svg" alt="" />
+        <Image
+          src="/images/example.jpg"
+          alt="Example"
+          width={500}
+          height={500}
+        />
       </div>
       <div className="content">
         <h3>why choose us?</h3>

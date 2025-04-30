@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Header from "@/components/Header/Header";
 import Sidebar from "@/components/Sidebar/Sidebar";
+import Image from "next/image";
 
 const SavePlaylistForm = () => {
   return (
@@ -16,7 +17,12 @@ const SavePlaylistForm = () => {
 const PlaylistThumbnail = () => {
   return (
     <div className="thumb">
-      <img src="/images/thumb-1.png" alt="" />
+      <Image
+        src="/images/playlist.jpg"
+        alt="Playlist"
+        width={500}
+        height={500}
+      />
       <span>10 videos</span>
     </div>
   );

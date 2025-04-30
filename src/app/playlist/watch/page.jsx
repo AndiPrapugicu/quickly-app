@@ -2,6 +2,7 @@ import React from "react";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import Header from "@/components/Header/Header";
 import Link from "next/link";
+import Image from "next/image"; // Importăm `Image` din `next/image`
 
 const Video = () => (
   <div className="video-container">
@@ -25,7 +26,13 @@ const Video = () => (
       </p>
     </div>
     <div className="tutor">
-      <img src="/images/pic-2.jpg" alt="" />
+      {/* Înlocuim <img> cu <Image /> */}
+      <Image
+        src="/images/pic-2.jpg"
+        alt="Olivia Carter"
+        width={50}
+        height={50}
+      />
       <div>
         <h3>Olivia Carter</h3>
         <span>developer</span>
@@ -43,7 +50,7 @@ const Video = () => (
     <p className="description">
       Uncover the secrets of CSS flexbox in this engaging video tutorial.
       Discover how to create responsive layouts, align items effortlessly, and
-      enhance your web design skills. Whether you're a novice or looking to
+      enhance your web design skills. Whether you&apos;re a novice or looking to
       refine your CSS expertise, join us on this journey to mastering flexbox
       and elevating your web development projects.
     </p>
@@ -73,7 +80,13 @@ const CommentForm = () => (
 const Comment = ({ user, date, text }) => (
   <div className="box">
     <div className="user">
-      <img src={`/images/${user.pic}`} alt="" />
+      {/* Înlocuim <img> cu <Image /> */}
+      <Image
+        src={`/images/${user.pic}`}
+        alt={user.name}
+        width={50}
+        height={50}
+      />
       <div>
         <h3>{user.name}</h3>
         <span>{date}</span>

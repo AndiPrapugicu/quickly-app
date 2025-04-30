@@ -1,6 +1,7 @@
 import Sidebar from "@/components/Sidebar/Sidebar";
 import Header from "@/components/Header/Header";
 import React from "react";
+import Image from "next/image";
 
 const Courses = () => {
   const coursesData = [
@@ -79,7 +80,12 @@ const Courses = () => {
           {coursesData.map((course, index) => (
             <div className="box" key={index}>
               <div className="tutor">
-                <img src={`images/pic-${index + 2}.jpg`} alt="" />
+                <Image
+                  src="/images/course.jpg"
+                  alt="Course"
+                  width={500}
+                  height={500}
+                />
                 <div className="info">
                   <h3>{course.tutor}</h3>
                   <span>{course.date}</span>

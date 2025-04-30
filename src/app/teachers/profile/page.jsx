@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import Header from "@/components/Header/Header";
+import Image from "next/image";
 
 const TeacherProfile = () => {
   const profileDetails = {
@@ -21,7 +22,12 @@ const TeacherProfile = () => {
         <h1 className="heading">Profile Details</h1>
         <div className="details">
           <div className="tutor">
-            <img src={`/images/${profileDetails.image}`} alt="" />
+            <Image
+              src={`/images/${profileDetails.image}`}
+              alt="Teacher"
+              width={500}
+              height={500}
+            />
             <h3>{profileDetails.name}</h3>
             <span>{profileDetails.role}</span>
           </div>

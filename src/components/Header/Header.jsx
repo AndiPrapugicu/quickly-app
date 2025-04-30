@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { FaBars, FaSearch, FaUser, FaSun, FaMoon } from "react-icons/fa";
 import { useUser } from "@auth0/nextjs-auth0/client";
+import Image from "next/image";
 
 const Header = () => {
   const { user, error, isLoading } = useUser();
@@ -70,7 +71,7 @@ const Header = () => {
       <header className="header">
         <section className="flex">
           <Link href="/" className="logo">
-            Quickly
+            <Image src="/images/logo.png" alt="Logo" width={100} height={50} />
           </Link>
 
           <form action="search.html" method="post" className="search-form">

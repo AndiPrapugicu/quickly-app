@@ -1,6 +1,7 @@
 import React from "react";
 import Sidebar from "@/components/Sidebar/Sidebar";
 import Header from "@/components/Header/Header";
+import Image from "next/image";
 
 const ContactForm = () => (
   <form action="" method="post">
@@ -66,7 +67,12 @@ const Contact = () => (
     <section className="contact">
       <div className="row">
         <div className="image">
-          <img src="images/contact-img.svg" alt="" />
+          <Image
+            src="/images/contact.jpg"
+            alt="Contact"
+            width={500}
+            height={500}
+          />
         </div>
         <ContactForm />
       </div>
