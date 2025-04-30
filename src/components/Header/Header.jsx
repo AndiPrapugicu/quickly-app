@@ -8,26 +8,29 @@ import Image from "next/image";
 const Header = () => {
   const { user, error, isLoading } = useUser();
   const [isSidebarActive, setIsSidebarActive] = useState(false);
-  const [darkMode, setDarkMode] = useState(
-    localStorage.getItem("dark-mode") === "enabled"
-  );
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
-    if (darkMode) {
-      enableDarkMode();
+    if (typeof window !== "undefined") {
+      const storedDarkMode = localStorage.getItem("dark-mode");
+      setDarkMode(storedDarkMode === "enabled");
     }
-  }, [darkMode]);
+  }, []);
 
   const enableDarkMode = () => {
-    setDarkMode(true);
-    document.body.classList.add("dark");
-    localStorage.setItem("dark-mode", "enabled");
+    if (typeof window !== "undefined") {
+      setDarkMode(true);
+      document.body.classList.add("dark");
+      localStorage.setItem("dark-mode", "enabled");
+    }
   };
 
   const disableDarkMode = () => {
-    setDarkMode(false);
-    document.body.classList.remove("dark");
-    localStorage.setItem("dark-mode", "disabled");
+    if (typeof window !== "undefined") {
+      setDarkMode(false);
+      document.body.classList.remove("dark");
+      localStorage.setItem("dark-mode", "disabled");
+    }
   };
 
   const toggleDarkMode = () => {
@@ -115,7 +118,13 @@ const Header = () => {
           </div>
 
           <div className="profile">
-            <Image src="images/pic-1.jpg" className="image" alt="" />
+            <Image
+              src="/images/pic-1.jpg"
+              className="image"
+              alt="User Profile"
+              width={100}
+              height={100}
+            />
             <h3 className="name">{user ? user.name : "Guest"}</h3>
             <p className="role">Student</p>
             <Link href="/profile" className="btn">
