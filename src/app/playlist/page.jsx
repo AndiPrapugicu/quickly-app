@@ -17,7 +17,12 @@ const SavePlaylistForm = () => {
 const PlaylistThumbnail = () => {
   return (
     <div className="thumb">
-      <Image src="/images/post-1-1.png" alt="Playlist Thumbnail" width={500} height={500} />
+      <Image
+        src="/images/post-1-1.png"
+        alt="Playlist Thumbnail"
+        width={500}
+        height={500}
+      />
     </div>
   );
 };
@@ -25,7 +30,7 @@ const PlaylistThumbnail = () => {
 const TutorDetails = () => {
   return (
     <div className="tutor">
-      <img src="/images/pic-2.jpg" alt="" />
+      <Image src="/images/pic-2.jpg" alt="Tutor" width={50} height={50} />
       <div>
         <h3>john deo</h3>
         <span>21-10-2022</span>
@@ -54,7 +59,7 @@ const PlaylistDetails = () => {
                 Explore the fundamentals of HTML with this concise video
                 tutorial. Learn how to structure your web content, create links,
                 and leverage HTML tags to build the foundation of your web
-                pages. Whether you're a beginner or looking to refresh your
+                pages. Whether you&apos;re a beginner or looking to refresh your
                 skills, dive into the essentials of HTML in this insightful
                 video.
               </p>
@@ -70,37 +75,67 @@ const PlaylistDetails = () => {
           <div className="box-container">
             <Link className="box" href="/playlist/watch">
               <i className="fas fa-play"></i>
-              <Image src="/images/post-1-1.png" alt="Playlist Thumbnail" width={500} height={500} />
+              <Image
+                src="/images/post-1-1.png"
+                alt="Playlist Thumbnail"
+                width={500}
+                height={500}
+              />
               <h3>complete HTML tutorial (part 01)</h3>
             </Link>
 
             <Link className="box" href="/playlist/watch">
               <i className="fas fa-play"></i>
-              <img src="/images/post-1-2.png" alt="" />
+              <Image
+                src="/images/post-1-2.png"
+                alt="Playlist Thumbnail"
+                width={500}
+                height={500}
+              />
               <h3>complete HTML tutorial (part 02)</h3>
             </Link>
 
             <Link className="box" href="/playlist/watch">
               <i className="fas fa-play"></i>
-              <img src="/images/post-1-3.png" alt="" />
+              <Image
+                src="/images/post-1-3.png"
+                alt="Playlist Thumbnail"
+                width={500}
+                height={500}
+              />
               <h3>complete HTML tutorial (part 03)</h3>
             </Link>
 
             <Link className="box" href="/playlist/watch">
               <i className="fas fa-play"></i>
-              <img src="/images/post-1-4.png" alt="" />
+              <Image
+                src="/images/post-1-4.png"
+                alt="Playlist Thumbnail"
+                width={500}
+                height={500}
+              />
               <h3>complete HTML tutorial (part 04)</h3>
             </Link>
 
             <Link className="box" href="/playlist/watch">
               <i className="fas fa-play"></i>
-              <img src="/images/post-1-5.png" alt="" />
+              <Image
+                src="/images/post-1-5.png"
+                alt="Playlist Thumbnail"
+                width={500}
+                height={500}
+              />
               <h3>complete HTML tutorial (part 05)</h3>
             </Link>
 
             <Link className="box" href="/playlist/watch">
               <i className="fas fa-play"></i>
-              <img src="/images/post-1-6.png" alt="" />
+              <Image
+                src="/images/post-1-6.png"
+                alt="Playlist Thumbnail"
+                width={500}
+                height={500}
+              />
               <h3>complete HTML tutorial (part 06)</h3>
             </Link>
           </div>

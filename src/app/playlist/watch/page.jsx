@@ -26,7 +26,6 @@ const Video = () => (
       </p>
     </div>
     <div className="tutor">
-      {/* Înlocuim <img> cu <Image /> */}
       <Image
         src="/images/pic-2.jpg"
         alt="Olivia Carter"
@@ -80,7 +79,6 @@ const CommentForm = () => (
 const Comment = ({ user, date, text }) => (
   <div className="box">
     <div className="user">
-      {/* Înlocuim <img> cu <Image /> */}
       <Image
         src={`/images/${user.pic}`}
         alt={user.name}
